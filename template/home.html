@@ -1,0 +1,191 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fathima | Python Full Stack Developer</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Fathima J</h2>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HOME SECTION -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span>Fathima</span></h1>
+        <h2>Python Full Stack Developer</h2>
+
+        <p>
+            I am a passionate Python developer interested in
+            building responsive and user-friendly web applications
+            using Django, HTML, CSS and MySQL.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="{% static 'css/images/Fathima j.pdf' %}"
+               class="btn btn-outline" download>Download CV</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="{% static 'css/images/pathu.png' %}"
+             alt="Fathima Profile Photo">
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section">
+    <h2 class="section-title">About <span>Me</span></h2>
+
+    <div class="about-content">
+        <p>
+            I have completed my Bachelor of Computer Applications (BCA)
+            and am currently pursuing Python Full Stack Development
+            training at SMEC Technologies.
+        </p>
+
+        <p>
+            I enjoy developing web applications and learning new
+            technologies. My interests include Python programming,
+            Django development and database management.
+        </p>
+
+
+<!-- EDUCATION & EXPERIENCE SECTION -->
+<section id="education" class="section">
+
+    <h2 class="section-title">Education & <span>Experience</span></h2>
+
+    <div class="education-container">
+
+        <!-- EDUCATION -->
+        <div class="education-card">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <h4>Sree Narayana College of Technology</h4>
+            <p class="edu-date">Degree Completed</p>
+            <p>
+                Completed my Bachelor's degree in Computer Applications,
+                gaining knowledge in programming, databases and
+                computer applications.
+            </p>
+        </div>
+
+        <!-- INTERNSHIP / TRAINING -->
+        <div class="education-card">
+            <h3>Python Full Stack Development</h3>
+            <h4>SMEC Technologies</h4>
+            <p class="edu-date">Internship / Training</p>
+            <p>
+                Gaining practical knowledge in Python programming,
+                Django web development, HTML, CSS and MySQL.
+                Developing web applications and improving
+                programming and problem-solving skills.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+    </div>
+
+</section>
+
+    </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="section">
+    <h2 class="section-title">My <span>Skills</span></h2>
+
+    <div class="skills-container">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Django</div>
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">Git & GitHub</div>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section">
+    <h2 class="section-title">My <span>Projects</span></h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>Cookit</h3>
+            <p>
+                A web-based application designed to provide
+                users with an organized and convenient cooking
+                and recipe experience.
+            </p>
+            <p class="tech">Technologies: Python, Django, HTML, CSS, MySQL</p>
+        </div>
+
+        <div class="project-card">
+            <h3>FreelanceHub</h3>
+            <p>
+                An AI-powered freelance marketplace and work
+                management platform that connects clients with
+                suitable freelancers based on their skills
+                and project requirements.
+            </p>
+            <p class="tech">Technologies: Python, Django, HTML, CSS, MySQL</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section">
+    <h2 class="section-title">Contact <span>Me</span></h2>
+
+    <div class="contact-content">
+        <p>I'm interested in Python Developer opportunities.</p>
+
+        <p>Email:
+            <a href="mailto:fathimajafer2004@gmail.com">
+                fathimajafer2004@gmail.com
+            </a>
+        </p>
+
+        <p>LinkedIn:
+            <a href=https://www.linkedin.com/in/fathima-j-8a3878315/" target="_blank">
+                Visit my LinkedIn
+            </a>
+        </p>
+
+        <p>GitHub:
+            <a href="https://github.com/fathimaj-afar" target="_blank">
+                Visit my GitHub
+            </a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Fathima. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

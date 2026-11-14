@@ -1,0 +1,272 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b1120;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+header {
+    background: #111a2e;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+}
+
+.logo span,
+.hero h1 span,
+.section-title span {
+    color: #a78bfa;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+/* HOME */
+
+.hero {
+    min-height: 90vh;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #a78bfa;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.welcome) {
+    color: #b8c1d1;
+    line-height: 1.8;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #a78bfa;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background: #8b5cf6;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #7c3aed;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #a78bfa;
+}
+
+/* COMMON SECTIONS */
+
+.section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    color: #b8c1d1;
+    line-height: 1.9;
+}
+
+.education {
+    margin-top: 30px;
+    padding: 20px;
+    background: #151f35;
+    border-radius: 10px;
+}
+
+.education h3 {
+    color: #a78bfa;
+    margin-bottom: 10px;
+}
+
+/* SKILLS */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background: #151f35;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #293752;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #a78bfa;
+}
+
+/* PROJECTS */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: #151f35;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #293752;
+}
+
+.project-card h3 {
+    color: #a78bfa;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #b8c1d1;
+    line-height: 1.7;
+}
+
+.project-card .tech {
+    margin-top: 15px;
+    color: #a78bfa;
+    font-size: 14px;
+}
+
+/* CONTACT */
+
+.contact-content {
+    text-align: center;
+    line-height: 2.5;
+    color: #b8c1d1;
+}
+
+.contact-content a {
+    color: #a78bfa;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    background: #111a2e;
+    padding: 25px;
+    text-align: center;
+    color: #b8c1d1;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
